@@ -1,13 +1,14 @@
-﻿using Game.Shared.Models.Enums;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+
+#nullable disable
 
 namespace Game.Shared.Models.Requests
 {
     public class ConnectPlayerModel
     {
         [Required]
-        public required long SessionId { get; set; }
+        public long SessionId { get; set; }
         [Required]
-        public required long PlayerId { get; set; }
+        public long PlayerId { get; set; }
     }
 }

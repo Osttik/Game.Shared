@@ -1,15 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+#nullable disable
+
 namespace Game.Shared.Models.Requests
 {
     public class JoinRoomModel
     {
         [Required]
-        public required long PlayerId { get; set; }
+        public long PlayerId { get; set; }
         [Required]
-        public required long RoomId { get; set; }
+        public long RoomId { get; set; }
         [Required]
         [MinLength(5)]
-        public required string Password { get; set; }
+        public string Password { get; set; }
     }
 }

@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 
+#nullable disable
+
 namespace Game.Shared.Models.Requests
 {
     public class CreateRoomModel
@@ -8,11 +10,11 @@ namespace Game.Shared.Models.Requests
         [Required]
         [MinLength(5)]
         [MaxLength(20)]
-        public required string Name { get; set; }
+        public string Name { get; set; }
         [AllowNull]
         [MinLength(5)]
-        public string? Password { get; set; }
+        public string Password { get; set; }
         [Required]
-        public required long PlayerId { get; set; }
+        public long PlayerId { get; set; }
     }
 }
