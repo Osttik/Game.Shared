@@ -1,4 +1,6 @@
-﻿namespace Game.Shared
+﻿using System.Collections.Generic;
+
+namespace Game.Shared
 {
     public class ErroredResponce
     {
