@@ -8,7 +8,5 @@ namespace Game.Shared.Models.Requests
     {
         [Required]
         public long SessionId { get; set; }
-        [Required]
-        public long PlayerId { get; set; }
     }
 }

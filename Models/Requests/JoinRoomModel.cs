@@ -7,8 +7,6 @@ namespace Game.Shared.Models.Requests
     public class JoinRoomModel
     {
         [Required]
-        public long PlayerId { get; set; }
-        [Required]
         public long RoomId { get; set; }
         [Required]
         [MinLength(5)]
