@@ -14,7 +14,5 @@ namespace Game.Shared.Models.Requests
         [AllowNull]
         [MinLength(5)]
         public string Password { get; set; }
-        [Required]
-        public long PlayerId { get; set; }
     }
 }
